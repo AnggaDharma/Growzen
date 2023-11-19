@@ -32,16 +32,18 @@ class RegistrasiActivity : AppCompatActivity() {
         email: String,
         password: String
     ) {
-        val result = dbHelper.addUser(firstName, lastName, email, password)
+        if (firstName.isNotEmpty() && lastName.isNotEmpty() && email.isNotEmpty() && password.isNotEmpty()) {
+            val result = dbHelper.addUser(firstName, lastName, email, password)
 
-        if (result != -1L) {
-            Toast.makeText(this, "Registrasi Berhasil", Toast.LENGTH_SHORT).show()
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
-            finish()
-        } else {
-            Toast.makeText(this, "Registrasi Gagal", Toast.LENGTH_SHORT).show()
+            if (result != -1L) {
+                Toast.makeText(this, "Registrasi Berhasil", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, LoginActivity::class.java)
+                startActivity(intent)
+                finish()
+            } else {
+                Toast.makeText(this, "Registrasi Gagal", Toast.LENGTH_SHORT).show()
 
+            }
         }
     }
 }
