@@ -55,36 +55,36 @@
 
         <EditText
             android:id="@+id/email"
-            android:layout_width="match_parent"
-            android:layout_height="43dp"
+            android:layout_width="348dp"
+            android:layout_height="55dp"
             android:layout_marginStart="28dp"
+            android:layout_marginTop="25dp"
             android:layout_marginEnd="28dp"
             android:background="@drawable/bg_textview"
             android:drawableStart="@drawable/icon_edit"
             android:drawablePadding="20dp"
-            android:layout_marginTop="25dp"
-            android:hint="Email"
-            android:textSize="16sp"
             android:fontFamily="@font/poppins_regular"
             android:gravity="center_vertical"
-            android:paddingStart="10dp" />
+            android:hint="Email"
+            android:paddingStart="10dp"
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/pass"
-            android:layout_width="match_parent"
-            android:layout_height="43dp"
+            android:layout_width="348dp"
+            android:layout_height="55dp"
             android:layout_marginStart="28dp"
+            android:layout_marginTop="25dp"
             android:layout_marginEnd="28dp"
             android:background="@drawable/bg_textview"
             android:drawableStart="@drawable/icon_edit"
             android:drawablePadding="20dp"
-            android:layout_marginTop="25dp"
-            android:hint="Password"
-            android:textSize="16sp"
-            android:inputType="textPassword"
             android:fontFamily="@font/poppins_regular"
             android:gravity="center_vertical"
-            android:paddingStart="10dp" />
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingStart="10dp"
+            android:textSize="16sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -101,16 +101,16 @@
 
         <Button
             android:id="@+id/btn_login"
-            android:layout_width="match_parent"
-            android:layout_height="44dp"
-            android:text="Login"
-            android:layout_marginTop="20dp"
-            android:textSize="16sp"
-
-            android:fontFamily="@font/poppins_medium"
+            android:layout_width="304dp"
+            android:layout_height="62dp"
             android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="50dp"
-            android:backgroundTint="@color/biru"/>
+
+            android:backgroundTint="@color/biru"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Login"
+            android:textSize="16sp" />
 
         <TextView
             android:layout_width="wrap_content"

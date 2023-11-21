@@ -12,154 +12,154 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:fontFamily="@font/poppins_semibold"
         android:gravity="center"
         android:text="Sign Up"
-        android:fontFamily="@font/poppins_semibold"
         android:textColor="@color/white"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.342" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="159dp"
+        android:layout_width="398dp"
+        android:layout_height="585dp"
+        android:layout_marginTop="80dp"
         android:background="@drawable/bg_login"
         android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:text="Registration"
-            android:layout_marginTop="30dp"
             android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
             android:fontFamily="@font/poppins_bold"
+            android:text="Registration"
             android:textColor="@color/blackfont"
-            android:textStyle="bold"
-            android:textSize="20sp">
-        </TextView>
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Create your account"
             android:layout_marginStart="28dp"
             android:fontFamily="@font/poppins_regular"
-            android:textStyle="bold"
-            android:textSize="10sp">
-        </TextView>
+            android:text="Create your account"
+            android:textSize="10sp"
+            android:textStyle="bold"></TextView>
 
         <EditText
             android:id="@+id/etFirstName"
-            android:layout_width="match_parent"
-            android:layout_height="43dp"
+            android:layout_width="355dp"
+            android:layout_height="54dp"
             android:layout_marginStart="28dp"
+            android:layout_marginTop="25dp"
             android:layout_marginEnd="28dp"
             android:background="@drawable/bg_textview"
             android:drawableStart="@drawable/icon_edit"
             android:drawablePadding="20dp"
-            android:layout_marginTop="25dp"
-            android:hint="Frist Name"
-            android:textSize="16sp"
             android:fontFamily="@font/poppins_regular"
             android:gravity="center_vertical"
-            android:paddingStart="10dp" />
+            android:hint="Frist Name"
+            android:paddingStart="10dp"
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/etLastName"
-            android:layout_width="match_parent"
-            android:layout_height="43dp"
+            android:layout_width="355dp"
+            android:layout_height="54dp"
             android:layout_marginStart="28dp"
+            android:layout_marginTop="25dp"
             android:layout_marginEnd="28dp"
             android:background="@drawable/bg_textview"
             android:drawableStart="@drawable/icon_edit"
             android:drawablePadding="20dp"
-            android:layout_marginTop="25dp"
-            android:hint="Last Name"
-            android:textSize="16sp"
             android:fontFamily="@font/poppins_regular"
             android:gravity="center_vertical"
-            android:paddingStart="10dp" />
+            android:hint="Last Name"
+            android:paddingStart="10dp"
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/etEmail"
-            android:layout_width="match_parent"
-            android:layout_height="43dp"
+            android:layout_width="355dp"
+            android:layout_height="54dp"
             android:layout_marginStart="28dp"
+            android:layout_marginTop="25dp"
             android:layout_marginEnd="28dp"
             android:background="@drawable/bg_textview"
             android:drawableStart="@drawable/icon_edit"
             android:drawablePadding="20dp"
-            android:layout_marginTop="25dp"
-            android:hint="Email"
-            android:textSize="16sp"
             android:fontFamily="@font/poppins_regular"
             android:gravity="center_vertical"
-            android:paddingStart="10dp" />
+            android:hint="Email"
+            android:paddingStart="10dp"
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/etPassword"
-            android:layout_width="match_parent"
-            android:layout_height="43dp"
+            android:layout_width="355dp"
+            android:layout_height="54dp"
             android:layout_marginStart="28dp"
+            android:layout_marginTop="25dp"
             android:layout_marginEnd="28dp"
             android:background="@drawable/bg_textview"
             android:drawableStart="@drawable/icon_edit"
             android:drawablePadding="20dp"
-            android:layout_marginTop="25dp"
-            android:hint="Password"
-            android:textSize="16sp"
-            android:inputType="textPassword"
             android:fontFamily="@font/poppins_regular"
             android:gravity="center_vertical"
-            android:paddingStart="10dp" />
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingStart="10dp"
+            android:textSize="16sp" />
 
 
         <Button
             android:id="@+id/btnRegister"
-            android:layout_width="match_parent"
-            android:layout_height="44dp"
-            android:text="Register"
-            android:layout_marginTop="50dp"
-            android:textSize="16sp"
-            android:fontFamily="@font/poppins_medium"
+            android:layout_width="317dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
             android:layout_marginEnd="50dp"
-            android:backgroundTint="@color/biru"/>
+            android:backgroundTint="@color/biru"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Register"
+            android:textSize="16sp" />
 
         <LinearLayout
             android:id="@+id/sign_google"
-            android:layout_width="match_parent"
+            android:layout_width="315dp"
             android:layout_height="44dp"
-            android:layout_marginTop="20dp"
             android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="50dp"
             android:background="@drawable/stroke"
             android:gravity="center">
 
             <TextView
+                android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView"
-                android:text="Sign in With Google"
                 android:fontFamily="@font/poppins_regular"
-                android:textSize="10sp"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:text="Sign in With Google"
+                android:textSize="10sp" />
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="2dp"
-                android:src="@drawable/ic_google"/>
+                android:src="@drawable/ic_google" />
 
         </LinearLayout>
-
-
 
 
     </LinearLayout>
