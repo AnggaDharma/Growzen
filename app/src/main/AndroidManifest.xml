@@ -22,7 +22,7 @@
             android:name=".DataObatActivity"
             android:exported="false" />
         <activity
-            android:name=".Home"
+            android:name=".SplashScreen"
             android:exported="false" />
         <activity
             android:name=".RegistrasiActivity"
@@ -31,7 +31,7 @@
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".Home"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
