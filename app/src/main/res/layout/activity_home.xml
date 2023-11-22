@@ -260,7 +260,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView14">
 
         <ImageView
-            android:id="@+id/imageView9"
+            android:id="@+id/artikel1"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -269,7 +269,7 @@
             android:src="@drawable/content1" />
 
         <ImageView
-            android:id="@+id/imageView10"
+            android:id="@+id/artikel2"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="12dp"
@@ -277,7 +277,7 @@
             android:src="@drawable/content2" />
 
         <ImageView
-            android:id="@+id/imageView11"
+            android:id="@+id/artikel3"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="12dp"
@@ -285,7 +285,7 @@
             android:src="@drawable/content3" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/artikel4"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="12dp"
@@ -301,7 +301,6 @@
         android:layout_weight="1"
         android:background="@color/white"
         app:itemIconSize="34sp"
-        app:itemIconTint="@color/background"
         app:labelVisibilityMode="unlabeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

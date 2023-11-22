@@ -1,6 +1,5 @@
 package com.example.growzen.Adapter
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -8,49 +7,46 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.growzen.Model.post
+import com.example.growzen.Model.ModelSharing
 import com.example.growzen.R
 
-class PostAdapter(private val context: Context, private val postList: List<post>) :
-RecyclerView.Adapter<PostAdapter.ViewHolder>() {
+class PostAdapter(private val context: Context, private val postList: List<ModelSharing>) :
+    RecyclerView.Adapter<PostAdapter.PostViewHolder>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_post, parent, false)
-        return ViewHolder(view)
+    inner class PostViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val imgProfile: ImageView = itemView.findViewById(R.id.img_profile)
+        val textUsername: TextView = itemView.findViewById(R.id.textUsername)
+        val postTime: TextView = itemView.findViewById(R.id.postTime)
+        val textContent: TextView = itemView.findViewById(R.id.textContent)
+        val imageLike: ImageView = itemView.findViewById(R.id.imageLike)
+        val likeCount: TextView = itemView.findViewById(R.id.LikeCount)
+        val imageComment: ImageView = itemView.findViewById(R.id.imageComment)
+        val commentCount: TextView = itemView.findViewById(R.id.CommentCount)
     }
 
-    @SuppressLint("StringFormatInvalid")
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val post = postList[position]
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PostViewHolder {
+        val itemView = LayoutInflater.from(parent.context)
+            .inflate(R.layout.item_post, parent, false)
+        return PostViewHolder(itemView)
+    }
+
+    override fun onBindViewHolder(holder: PostViewHolder, position: Int) {
+        val currentPost = postList[position]
 
         // Set data to views
-        holder.textUsername.text = post.username
-        holder.textContent.text = post.content
-        holder.textPostTime.text = post.postTime
-        holder.img_post.setImageResource (post.image)
-        holder.imagePost.setImageResource(post.image)
-
-        holder.textLikeCount.text = context.getString(R.string.like_count, post.likes)
-        holder.textCommentCount.text = context.getString(R.string.comment_count, post.comments)
+        holder.imgProfile.setImageResource(currentPost.profileImage)
+        holder.textUsername.text = currentPost.username
+        holder.postTime.text = currentPost.postTime
+        holder.textContent.text = currentPost.content
+        holder.likeCount.text = currentPost.likeCount.toString() + " Likes"
+        holder.commentCount.text = currentPost.commentCount.toString() + " Comments"
     }
 
     override fun getItemCount(): Int {
         return postList.size
     }
-
-
-    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val textUsername: TextView = itemView.findViewById(R.id.textUsername)
-        val img_post: ImageView = itemView.findViewById(R.id.img_profile)
-        val textContent: TextView = itemView.findViewById(R.id.textContent)
-        val textPostTime: TextView = itemView.findViewById(R.id.textContent)
-        val imagePost: ImageView = itemView.findViewById(R.id.imagePost)
-        val imageLike: ImageView = itemView.findViewById(R.id.imageLike)
-        val textLikeCount: TextView = itemView.findViewById(R.id.textLikeCount)
-        val imageComment: ImageView = itemView.findViewById(R.id.imageComment)
-        val textCommentCount: TextView = itemView.findViewById(R.id.textCommentCount)
-    }
 }
+
 
 
 

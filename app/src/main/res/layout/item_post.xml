@@ -2,7 +2,6 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -21,7 +20,7 @@
                 android:id="@+id/img_profile"
                 android:layout_width="45dp"
                 android:layout_height="39dp"
-                android:src="@drawable/logo_obat"
+                android:src="@drawable/pict_profile"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.008"
@@ -62,17 +61,10 @@
 
     <TextView
         android:id="@+id/textContent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="isi postingan " />
-
-    <ImageView
-        android:id="@+id/imagePost"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:scaleType="centerCrop"
-        android:layout_marginTop="8dp"
-        />
+        android:text="isi postingan "
+        android:paddingLeft="8dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -87,7 +79,7 @@
             android:src="@drawable/love"/>
 
         <TextView
-            android:id="@+id/textLikeCount"
+            android:id="@+id/LikeCount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -101,7 +93,7 @@
             android:layout_marginStart="16dp"/>
 
         <TextView
-            android:id="@+id/textCommentCount"
+            android:id="@+id/CommentCount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
