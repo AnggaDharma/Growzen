@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">GrowZen</string>
+
+    <string-array name="Jenis_Obat">
+        <item>"Tablet"</item>
+        <item>"Pil"</item>
+        <item>"Sirup"</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="like_count" />
+    <string name="likeCount" />
+    <string name="comment_count" />
+    <string name="commentCount" />
+
+
 </resources>
