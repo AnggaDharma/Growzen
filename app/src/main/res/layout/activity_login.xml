@@ -29,33 +29,34 @@
         android:layout_marginTop="159dp"
         android:background="@drawable/bg_login"
         android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:text="Welcome Back"
-            android:layout_marginTop="30dp"
             android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
             android:fontFamily="@font/poppins_bold"
+            android:text="Welcome Back"
             android:textColor="@color/blackfont"
-            android:textStyle="bold"
-            android:textSize="20sp">
-        </TextView>
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Enter your account login"
             android:layout_marginStart="28dp"
             android:fontFamily="@font/poppins_regular"
-            android:textStyle="bold"
-            android:textSize="10sp">
-        </TextView>
+            android:text="Enter your account login"
+            android:textSize="10sp"
+            android:textStyle="bold"></TextView>
 
         <EditText
             android:id="@+id/email"
-            android:layout_width="348dp"
+            android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_marginStart="28dp"
             android:layout_marginTop="25dp"
@@ -71,7 +72,7 @@
 
         <EditText
             android:id="@+id/pass"
-            android:layout_width="348dp"
+            android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_marginStart="28dp"
             android:layout_marginTop="25dp"
@@ -89,20 +90,19 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Forgot Password ?"
-            android:layout_marginTop="8dp"
             android:layout_gravity="end"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="28dp"
             android:fontFamily="@font/poppins_regular"
-            android:textStyle="bold"
+            android:text="Forgot Password ?"
             android:textColor="@color/biru"
-            android:textSize="10sp">
-        </TextView>
+            android:textSize="10sp"
+            android:textStyle="bold"></TextView>
 
         <Button
             android:id="@+id/btn_login"
-            android:layout_width="304dp"
-            android:layout_height="62dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
             android:layout_marginStart="50dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="50dp"
@@ -115,56 +115,52 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="OR"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:fontFamily="@font/poppins_bold"
+            android:text="OR"
             android:textColor="@color/black"
-            android:textSize="20sp">
-        </TextView>
+            android:textSize="20sp"></TextView>
 
         <TextView
             android:id="@+id/create_account"
             android:layout_width="match_parent"
             android:layout_height="44dp"
-            android:text="Create Account"
-            android:gravity="center"
-            android:layout_marginTop="20dp"
             android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="50dp"
-            android:fontFamily="@font/poppins_regular"
             android:background="@drawable/stroke"
-            android:textSize="10sp">
-        </TextView>
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:text="Create Account"
+            android:textSize="10sp"></TextView>
 
         <LinearLayout
             android:id="@+id/sign_google"
             android:layout_width="match_parent"
             android:layout_height="44dp"
-            android:layout_marginTop="20dp"
             android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="50dp"
             android:background="@drawable/stroke"
             android:gravity="center">
 
             <TextView
+                android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView"
-                android:text="Sign in With Google"
                 android:fontFamily="@font/poppins_regular"
-                android:textSize="10sp"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:text="Sign in With Google"
+                android:textSize="10sp" />
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="2dp"
-                android:src="@drawable/ic_google"/>
+                android:src="@drawable/ic_google" />
 
         </LinearLayout>
-
-
 
 
     </LinearLayout>
