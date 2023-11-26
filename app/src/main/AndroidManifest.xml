@@ -13,6 +13,18 @@
         android:theme="@style/Theme.GrowZen"
         tools:targetApi="31">
         <activity
+            android:name=".IsiArtikellActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DataObatTabletActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotifikasiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TambahObat2Activity"
+            android:exported="false" />
+        <activity
             android:name=".ProfileActivity"
             android:exported="false" />
         <activity

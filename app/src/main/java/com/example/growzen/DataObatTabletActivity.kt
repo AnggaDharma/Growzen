@@ -1,21 +1,27 @@
 package com.example.growzen
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ArrayAdapter
 import android.widget.Button
-import android.widget.ImageView
-import android.widget.Spinner
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class TambahObatActivity : AppCompatActivity() {
+class DataObatTabletActivity : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_tambah_obat)
+        setContentView(R.layout.activity_data_obat_tablet)
+
+        val buttonTablet = findViewById<Button>(R.id.btn_tablet_1)
+        buttonTablet.setOnClickListener {
+            val intent = Intent(this@DataObatTabletActivity , DataObat_Tablet2Activity ::class.java)
+            startActivity(intent)
+        }
+
 
         //fungsi klik untuk bottom navigation
-        val bottomNavigationView : BottomNavigationView = findViewById(R.id.bottom_navigation_TambahObat1)
+        val bottomNavigationView : BottomNavigationView = findViewById(R.id.bottom_navigation_DO)
         bottomNavigationView.setOnNavigationItemReselectedListener { item ->
             when (item.itemId){
                 R.id.itemBeranda ->{
@@ -39,12 +45,5 @@ class TambahObatActivity : AppCompatActivity() {
 
         }
 
-
-        val btn_next = findViewById<Button>(R.id.btn_next)
-        btn_next.setOnClickListener {
-            val intent = Intent(this@TambahObatActivity, TambahObat2Activity::class.java)
-            startActivity(intent)
-
-        }
     }
 }

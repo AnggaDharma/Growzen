@@ -6,6 +6,15 @@
         <item>"Pil"</item>
         <item>"Sirup"</item>
     </string-array>
+
+
+    <string name="isi_artikel">
+        <item>"Tuberculosis (TBC) adalah penyakit menular yang disebabkan infeksi bakteri. Umumnya, penyakit ini menyerang paru-paru. Orang yang mengidap TBC akan mengalami berbagai gejala seperti batuk berdarah, penurunan berat badan, dan demam.
+
+Karena TBC adalah penyakit yang cukup berat, para penderitanya mengalami berbagai kesulitan selama menjalani masa perawatan. Mereka harus meminum obat dengan sangat disiplin semasa pengobatan. Mereka juga seringkali dikucilkan dan dijauhi karena orang-orang di sekitarnya takut tertular.
+
+Sayangnya, banyak masyarakat Indonesia yang masih awam dalam menyikapi TBC. Kesulitan-kesulitan selama menjalani pengobatan yang telah disebutkan masih sering terjadi. Untuk itu, diperlukan adanya tindakan yang tepat untuk membantu pengguna TBC melewati masa-masa sakitnya."</item>
+    </string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="like_count" />
