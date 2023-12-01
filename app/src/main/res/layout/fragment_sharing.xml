@@ -4,12 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SharingActivity">
+    tools:context=".SharingFragment">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="65dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,8 +21,8 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:background="@drawable/rectangle_blue">
+                android:layout_height="120dp"
+                android:background="@drawable/bghome">
 
                 <LinearLayout
                     android:id="@+id/linearLayout"
@@ -47,7 +46,8 @@
                         android:id="@+id/editText"
                         android:layout_width="match_parent"
                         android:layout_height="57dp"
-                        android:background="@drawable/search"
+                        android:background="@drawable/bg_blue"
+                        android:backgroundTint="@color/white"
                         android:drawablePadding="10dp"
                         android:ems="10"
                         android:gravity="center_vertical"
@@ -63,21 +63,8 @@
                 android:id="@+id/rv_post"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+                tools:listitem="@layout/item_post"/>
         </LinearLayout>
     </ScrollView>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation_Sharing"
-        android:layout_width="match_parent"
-        android:layout_height="56sp"
-        android:layout_weight="1"
-        android:background="@color/white"
-        app:itemIconSize="34sp"
-        app:labelVisibilityMode="unlabeled"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_menu" />
 </androidx.constraintlayout.widget.ConstraintLayout>

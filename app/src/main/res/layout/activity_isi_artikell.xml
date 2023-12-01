@@ -2,7 +2,6 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -15,76 +14,39 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-
         <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
 
-            <LinearLayout
+            <ImageView
+                android:id="@+id/imageViewDetail"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal">
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background" />
 
-                <ImageView
-                    android:id="@+id/imageView9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:src="@drawable/content1" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="407dp"
-                android:layout_height="58dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView25"
-                    android:layout_width="wrap_content"
-                    android:layout_height="48dp"
-                    android:layout_weight="1"
-                    android:paddingLeft="15dp"
-                    android:text="Apa Itu TBC ?"
-                    android:textSize="30sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/linearLayout10"
+            <TextView
+                android:id="@+id/textViewJudulDetail"
                 android:layout_width="match_parent"
-                android:layout_height="458dp"
-                android:orientation="horizontal"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout9"
-                app:layout_constraintVertical_bias="1.0">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Judul Artikel"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/isi_artikel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="445dp"
-                    android:layout_weight="1"
-                    android:paddingLeft="14dp"
-                    android:text="@string/isi_artikel"
-                    android:textSize="14sp" />
-            </LinearLayout>
+            <TextView
+                android:id="@+id/textViewDeskripsiDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Deskripsi Artikel"
+                android:textSize="16sp" />
 
         </LinearLayout>
-    </ScrollView>
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation_isi"
-        android:layout_width="match_parent"
-        android:layout_height="56sp"
-        android:layout_weight="1"
-        android:background="@color/white"
-        app:itemIconSize="34sp"
-        app:labelVisibilityMode="unlabeled"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_menu">
 
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

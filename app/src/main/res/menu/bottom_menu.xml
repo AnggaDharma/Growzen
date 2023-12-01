@@ -3,26 +3,18 @@
 
     <item
         android:id="@+id/itemBeranda"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:icon="@drawable/home"
         android:title="Beranda" />
     <item
         android:id="@+id/itemSharing"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:icon="@drawable/community"
         android:title="Sharing" />
     <item
         android:id="@+id/itemDataobat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:icon="@drawable/dataobat"
         android:title="Data obat" />
     <item
         android:id="@+id/itemProfile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:icon="@drawable/account"
         android:title="Profile" />
 </menu>

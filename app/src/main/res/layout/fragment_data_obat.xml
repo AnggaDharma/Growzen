@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context=".TambahObatActivity">
+    tools:context=".DataObatFragment">
 
     <ImageView
         android:id="@+id/imageView13"
@@ -131,21 +131,6 @@
             android:backgroundTint="@color/biru"
             android:text="Next" />
 
-
     </LinearLayout>
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation_TambahObat1"
-        android:layout_width="match_parent"
-        android:layout_height="56sp"
-        android:layout_weight="1"
-        android:background="@color/white"
-        app:itemIconSize="34sp"
-        app:labelVisibilityMode="unlabeled"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_menu" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

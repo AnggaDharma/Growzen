@@ -33,7 +33,7 @@ class LoginActivity : AppCompatActivity() {
         val userExists = dbHelper.getUserByEmailAndPassword(email, password)
         if (userExists){
             Toast.makeText(this, "Login Berhasil", Toast.LENGTH_SHORT).show()
-            val intent = Intent(this, Home::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
         } else {

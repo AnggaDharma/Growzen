@@ -1,0 +1,16 @@
+<resources>
+    <string-array name="titles">
+        <item>Apa itu TBC</item>
+        <item>Gejala TBC</item>
+        <item>Pengobatan TBC</item>
+        <item>Penyebab TBC</item>
+        <!-- Tambahkan item lain sesuai kebutuhan -->
+    </string-array>
+
+    <string-array name="descriptions">
+        <item>Deskripsi Artikel 1</item>
+        <item>Deskripsi Artikel 2</item>
+        <item>Deskripsi Artikel 2</item>
+        <item>Deskripsi Artikel 2</item>
+    </string-array>
+</resources>
