@@ -8,7 +8,7 @@ import android.widget.Button
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class DataObatTabletActivity : AppCompatActivity() {
-    @SuppressLint("MissingInflatedId")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_data_obat_tablet)

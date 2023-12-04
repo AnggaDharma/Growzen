@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 
 // TODO: Rename parameter arguments, choose names that match
@@ -45,8 +46,8 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 
-        val notifikasi = view.findViewById<ImageView>(R.id.notifikasi)
-        notifikasi.setOnClickListener {
+        val Notifikasi = view.findViewById<ImageView>(R.id.notifikasi)
+        Notifikasi.setOnClickListener {
             val intent = Intent(activity, NotifikasiActivity::class.java)
             startActivity(intent)
         }
@@ -57,17 +58,16 @@ class HomeFragment : Fragment() {
             startActivity(intent)
         }
 
+        val tablet = view.findViewById<LinearLayout>(R.id.linearLayout13)
+        tablet.setOnClickListener {
+            val  intent = Intent(activity, DataObatTabletActivity ::class.java )
+            startActivity(intent)
+        }
+
     }
 
     companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment HomeFragment.
-         */
+
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =

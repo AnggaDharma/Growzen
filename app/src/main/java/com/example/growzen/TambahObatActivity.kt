@@ -15,8 +15,8 @@ class TambahObatActivity : AppCompatActivity() {
         setContentView(R.layout.activity_tambah_obat)
 
 
-        val btn_next = findViewById<Button>(R.id.btn_next)
-        btn_next.setOnClickListener {
+        val Btn_next = findViewById<Button>(R.id.btn_next)
+        Btn_next.setOnClickListener {
             val intent = Intent(this@TambahObatActivity, TambahObat2Activity::class.java)
             startActivity(intent)
 
