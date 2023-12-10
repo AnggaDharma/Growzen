@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/biru"
-    tools:context=".DataObatTabletActivity"
+    tools:context=".SirupActivity"
     tools:ignore="ExtraText">
 
     <ImageView
@@ -91,21 +91,4 @@
             android:textStyle="bold" />
 
     </LinearLayout>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation_DO"
-        android:layout_width="match_parent"
-        android:layout_height="56sp"
-        android:layout_weight="1"
-        android:background="@color/white"
-        app:itemIconSize="34sp"
-        app:labelVisibilityMode="unlabeled"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_menu">
-
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

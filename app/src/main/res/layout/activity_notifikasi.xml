@@ -40,38 +40,42 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
-        <EditText
+        <TextView
             android:id="@+id/editText2"
             android:layout_width="match_parent"
             android:layout_height="99dp"
-            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:textSize="17sp"
             android:background="@color/biru2"
             android:paddingLeft="15dp"
             android:text="Raden memberikan komentar pada postinganmu: “semangat mas!”" />
 
-        <EditText
+        <TextView
             android:id="@+id/editText3"
             android:layout_width="match_parent"
             android:layout_height="99dp"
-            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:textSize="17sp"
             android:layout_marginTop="15dp"
             android:background="@color/biru_langit"
             android:paddingLeft="15dp"
             android:text="Ilham memberikan komentar pada postinganmu: “sabar ya.. insyaallah pasti sembuh””" />
 
-        <EditText
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="99dp"
-            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:textSize="17sp"
             android:layout_marginTop="15dp"
             android:background="@color/biru2"
             android:paddingLeft="15dp"
             android:text="Hadi memberikan komentar pada postingan “Jangan lupa ya.. jaga kesehatan dan pola makan”" />
 
-        <EditText
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="99dp"
-            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:textSize="17sp"
             android:layout_marginTop="15dp"
             android:background="@color/biru_langit"
             android:paddingLeft="15dp"

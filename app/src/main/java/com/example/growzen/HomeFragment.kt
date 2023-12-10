@@ -6,7 +6,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
@@ -60,11 +59,43 @@ class HomeFragment : Fragment() {
 
         val tablet = view.findViewById<LinearLayout>(R.id.linearLayout13)
         tablet.setOnClickListener {
-            val  intent = Intent(activity, DataObatTabletActivity ::class.java )
-            startActivity(intent)
+            val  tablet = Intent(activity, DataObatTabletActivity ::class.java )
+            startActivity(tablet)
         }
 
+        val pil = view.findViewById<LinearLayout>(R.id.pil)
+        pil.setOnClickListener {
+            val pil = Intent(activity, PilActivity::class.java)
+            startActivity(pil)
+        }
+
+        val sirup = view.findViewById<LinearLayout>(R.id.linearLayout14)
+        sirup.setOnClickListener {
+            val sirup = Intent(activity, SirupActivity::class.java)
+            startActivity(sirup)
+        }
+
+//        view.findViewById<View>(R.id.im_tablet).setOnClickListener {
+//            navigateToObatList("tablet")
+//        }
+//
+//        view.findViewById<View>(R.id.im_pil).setOnClickListener {
+//            navigateToObatList("pil")
+//        }
+//
+//        view.findViewById<View>(R.id.imageView25).setOnClickListener {
+//            navigateToObatList("sirup")
+//        }
+
     }
+
+//    private fun navigateToObatList(jenisObat: String) {
+//        val intent = Intent(requireActivity(), DataObatActivity::class.java)
+//        intent.putExtra("jenisObat", jenisObat)
+//        startActivity(intent)
+//    }
+
+
 
     companion object {
 

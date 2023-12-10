@@ -13,18 +13,6 @@
         android:theme="@style/Theme.GrowZen"
         tools:targetApi="31">
         <activity
-            android:name=".Stock_sirupActivity"
-            android:exported="false" />
-        <activity
-            android:name=".stock_pilActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SirupActivity"
-            android:exported="false" />
-        <activity
-            android:name=".PIL_Activity"
-            android:exported="false" />
-        <activity
             android:name=".IsiArtikellActivity"
             android:exported="false" />
         <activity
@@ -40,16 +28,23 @@
             android:name=".ProfileActivity"
             android:exported="false" />
         <activity
+            android:name=".SharingActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:exported="false" />
+        <activity
             android:name=".ArtikelActivity"
             android:exported="false" />
         <activity
             android:name=".TambahObatActivity"
-            android:exported="false"
-            android:windowSoftInputMode="stateHidden|adjustResize" />
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false"
-            android:windowSoftInputMode="stateHidden|adjustNothing" />
+            android:windowSoftInputMode="stateHidden|adjustNothing"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
         <activity
             android:name=".RegistrasiActivity"
             android:exported="false" />

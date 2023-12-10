@@ -69,8 +69,6 @@
                 android:layout_height="180dp"
                 android:layout_gravity="center"
                 android:src="@drawable/banner" />
-
-
         </LinearLayout>
 
 
@@ -128,6 +126,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/pil"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:background="@drawable/rectangle_hari"
@@ -222,7 +221,6 @@
                 android:id="@+id/linearLayout134"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginTop="15dp"
                 android:orientation="horizontal">
 
                 <ImageView
