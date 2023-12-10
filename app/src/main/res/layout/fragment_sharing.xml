@@ -40,7 +40,7 @@
                     <ImageView
                         android:layout_width="76dp"
                         android:layout_height="62dp"
-                        android:src="@drawable/pict_profile" />
+                        android:src="@drawable/pp1" />
 
                     <EditText
                         android:id="@+id/editText"

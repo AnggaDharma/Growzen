@@ -3,18 +3,18 @@
 
     <item
         android:id="@+id/itemBeranda"
-        android:icon="@drawable/home"
+        android:icon="@drawable/housee"
         android:title="Beranda" />
     <item
         android:id="@+id/itemSharing"
-        android:icon="@drawable/community"
+        android:icon="@drawable/sharinkk"
         android:title="Sharing" />
     <item
         android:id="@+id/itemDataobat"
-        android:icon="@drawable/dataobat"
+        android:icon="@drawable/obatee"
         android:title="Data obat" />
     <item
         android:id="@+id/itemProfile"
-        android:icon="@drawable/account"
+        android:icon="@drawable/profilee"
         android:title="Profile" />
 </menu>

@@ -23,11 +23,11 @@
 
                 <ImageView
                     android:id="@+id/imageView5"
-                    android:layout_width="77dp"
-                    android:layout_height="79dp"
+                    android:layout_width="70dp"
+                    android:layout_height="75dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="20dp"
-                    android:src="@drawable/pict_profile" />
+                    android:src="@drawable/pp1" />
 
                 <TextView
                     android:id="@+id/textView4"
@@ -112,7 +112,7 @@
                     android:id="@+id/im_tablet"
                     android:layout_width="56dp"
                     android:layout_height="56dp"
-                    android:src="@drawable/tablets" />
+                    android:src="@drawable/tblt" />
 
                 <TextView
                     android:id="@+id/textView16"
@@ -142,7 +142,7 @@
                     android:layout_width="56dp"
                     android:layout_height="56dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/pil" />
+                    android:src="@drawable/pillsss" />
 
                 <TextView
                     android:id="@+id/textView22"
@@ -171,7 +171,7 @@
                     android:layout_width="56dp"
                     android:layout_height="56dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/syrup" />
+                    android:src="@drawable/sirupppp" />
 
                 <TextView
                     android:id="@+id/textView21"

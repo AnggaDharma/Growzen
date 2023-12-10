@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">GrowZen</string>
+    <string name="app_name">PejuangTB</string>
 
     <string-array name="Jenis_Obat">
         <item>"Tablet"</item>

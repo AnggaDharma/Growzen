@@ -28,10 +28,6 @@
             android:name=".ProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".SharingActivity"
-            android:windowSoftInputMode="stateHidden|adjustResize"
-            android:exported="false" />
-        <activity
             android:name=".ArtikelActivity"
             android:exported="false" />
         <activity
@@ -41,9 +37,6 @@
         <activity
             android:name=".MainActivity"
             android:windowSoftInputMode="stateHidden|adjustNothing"
-            android:exported="false" />
-        <activity
-            android:name=".Home"
             android:exported="false" />
         <activity
             android:name=".RegistrasiActivity"

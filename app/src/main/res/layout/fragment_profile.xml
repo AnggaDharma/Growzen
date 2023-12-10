@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="408dp"
-        android:layout_height="595dp"
+        android:layout_width="416dp"
+        android:layout_height="616dp"
         android:layout_marginTop="164dp"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,7 +23,7 @@
         android:id="@+id/imageView6"
         android:layout_width="153dp"
         android:layout_height="129dp"
-        android:src="@drawable/pict_profile"
+        android:src="@drawable/pp2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
