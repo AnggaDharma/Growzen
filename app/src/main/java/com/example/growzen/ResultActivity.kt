@@ -3,9 +3,9 @@ package com.example.growzen
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class PilActivity : AppCompatActivity() {
+class ResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_pil)
+        setContentView(R.layout.activity_result)
     }
 }

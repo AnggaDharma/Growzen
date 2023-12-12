@@ -25,7 +25,7 @@ class DBHelper(private val context: Context) : SQLiteOpenHelper(context, DATABAS
                 "$COLUMN_LAST_NAME TEXT, " +
                 "$COLUMN_EMAIL TEXT, " +
                 "$COLUMN_PASSWORD TEXT)")
-        db?.execSQL(createTableQuery)
+        db.execSQL(createTableQuery)
     }
 
     override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {

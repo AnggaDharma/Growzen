@@ -13,37 +13,23 @@ import com.example.growzen.Entity.WaktuObat
 @Dao
 interface Dao {
 
-    @Query("SELECT * FROM waktuobat")
-    fun getAllWaktuObatData(): LiveData<List<WaktuObat>>
-
-    @Query("SELECT * FROM waktuobat WHERE id = :id")
-    fun getWaktuObatById(id: Int): LiveData<WaktuObat>
-
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertWaktuObat(data: WaktuObat)
-
-    @Update()
-    suspend fun updateWaktuObat(data: WaktuObat)
-
-    @Delete()
-    suspend fun deleteWaktuObat(data: WaktuObat)
+    suspend fun insertDataObat(dataObat: DataObat)
 
     @Query("SELECT * FROM dataobat")
-    fun getAllDataObatData(): LiveData<List<DataObat>>
+    fun getAllDataObat(): LiveData<List<DataObat>>
 
-    @Query("SELECT * FROM dataobat WHERE id = :id")
-    fun getDataObatById(id: Int): LiveData<DataObat>
+//    @Query("SELECT * FROM dataobat WHERE jenisObat = :jenis")
+//    fun getDataObatByJenis(jenis:String):LiveData<List<DataObat>>
 
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertDataObat(data: DataObat)
+    @Query("SELECT * FROM dataobat WHERE jenisObat = :jenis")
+    fun getDataObatByJenis(jenis:String):LiveData<DataObat>
 
-    @Update()
-    suspend fun updateDataObat(data: DataObat)
 
-    @Delete()
-    suspend fun deleteDataObat(data: DataObat)
+    @Update
+    suspend fun updateObat(obat: DataObat)
 
-    @Query("SELECT * FROM dataobat WHERE jenisObat = :jenisObat")
-    fun getDataObatByJenis(jenisObat: String): List<DataObat>
+    @Delete
+    suspend fun deleteObat(obat: DataObat)
 
 }

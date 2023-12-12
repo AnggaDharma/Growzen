@@ -16,7 +16,8 @@ class IsiArtikellActivity : AppCompatActivity() {
         val textViewDeskripsiDetail = findViewById<TextView>(R.id.textViewDeskripsiDetail)
 
         // Mendapatkan data yang dikirim dari intent
-        val modelsArtikel = intent.getParcelableExtra<ModelsArtikel>("modelsArtikel")
+//        val modelsArtikel = intent.getParcelableExtra<ModelsArtikel>("modelsArtikel")
+        val modelsArtikel: ModelsArtikel? = intent.getParcelableExtra("modelsArtikel")
 
         // Set data ke elemen UI
         modelsArtikel?.let {

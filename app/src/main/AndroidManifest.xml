@@ -13,6 +13,9 @@
         android:theme="@style/Theme.GrowZen"
         tools:targetApi="31">
         <activity
+            android:name=".ResultActivity"
+            android:exported="false" />
+        <activity
             android:name=".IsiArtikellActivity"
             android:exported="false" />
         <activity
@@ -25,19 +28,12 @@
             android:name=".TambahObat2Activity"
             android:exported="false" />
         <activity
-            android:name=".ProfileActivity"
-            android:exported="false" />
-        <activity
             android:name=".ArtikelActivity"
             android:exported="false" />
         <activity
-            android:name=".TambahObatActivity"
-            android:windowSoftInputMode="stateHidden|adjustResize"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
-            android:windowSoftInputMode="stateHidden|adjustNothing"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustNothing" />
         <activity
             android:name=".RegistrasiActivity"
             android:exported="false" />
@@ -53,6 +49,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <receiver android:name=".AlarmReceiver"/>
+
     </application>
 
 </manifest>

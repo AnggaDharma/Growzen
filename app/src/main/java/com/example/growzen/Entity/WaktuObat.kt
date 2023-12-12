@@ -1,7 +1,6 @@
 package com.example.growzen.Entity
 
 import androidx.room.Entity
-import androidx.room.ForeignKey
 import androidx.room.PrimaryKey
 @Entity(tableName = "waktuobat")
 data class WaktuObat(

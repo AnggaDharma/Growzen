@@ -38,12 +38,7 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
+        val view = inflater.inflate(R.layout.fragment_home, container, false)
 
         val Notifikasi = view.findViewById<ImageView>(R.id.notifikasi)
         Notifikasi.setOnClickListener {
@@ -57,43 +52,56 @@ class HomeFragment : Fragment() {
             startActivity(intent)
         }
 
-        val tablet = view.findViewById<LinearLayout>(R.id.linearLayout13)
-        tablet.setOnClickListener {
-            val  tablet = Intent(activity, DataObatTabletActivity ::class.java )
-            startActivity(tablet)
+
+        val buttonTablet = view.findViewById<LinearLayout>(R.id.linearLayout13)
+        val buttonPil = view.findViewById<LinearLayout>(R.id.pil)
+        val buttonSyrup = view.findViewById<LinearLayout>(R.id.linearLayout14)
+
+        buttonTablet.setOnClickListener {
+            navigateToDetailActivity("Tablet")
         }
 
-        val pil = view.findViewById<LinearLayout>(R.id.pil)
-        pil.setOnClickListener {
-            val pil = Intent(activity, PilActivity::class.java)
-            startActivity(pil)
+        buttonPil.setOnClickListener {
+            navigateToDetailActivity("Pil")
         }
 
-        val sirup = view.findViewById<LinearLayout>(R.id.linearLayout14)
-        sirup.setOnClickListener {
-            val sirup = Intent(activity, SirupActivity::class.java)
-            startActivity(sirup)
+        buttonSyrup.setOnClickListener {
+            navigateToDetailActivity("Syrup")
         }
 
-//        view.findViewById<View>(R.id.im_tablet).setOnClickListener {
-//            navigateToObatList("tablet")
-//        }
-//
-//        view.findViewById<View>(R.id.im_pil).setOnClickListener {
-//            navigateToObatList("pil")
-//        }
-//
-//        view.findViewById<View>(R.id.imageView25).setOnClickListener {
-//            navigateToObatList("sirup")
-//        }
-
+        return view
     }
 
-//    private fun navigateToObatList(jenisObat: String) {
-//        val intent = Intent(requireActivity(), DataObatActivity::class.java)
-//        intent.putExtra("jenisObat", jenisObat)
-//        startActivity(intent)
+    private fun navigateToDetailActivity(jenis: String) {
+        val intent = Intent(activity, DataObatTabletActivity::class.java)
+        intent.putExtra("JENIS", jenis)
+        startActivity(intent)
+    }
+
+//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+//        super.onViewCreated(view, savedInstanceState)
+//
+//
+//        val Notifikasi = view.findViewById<ImageView>(R.id.notifikasi)
+//        Notifikasi.setOnClickListener {
+//            val intent = Intent(activity, NotifikasiActivity::class.java)
+//            startActivity(intent)
+//        }
+//
+//        val artikel = view.findViewById<TextView>(R.id.textView49)
+//        artikel.setOnClickListener {
+//            val intent = Intent(activity, ArtikelActivity::class.java)
+//            startActivity(intent)
+//        }
+//
+//        val tablet = view.findViewById<LinearLayout>(R.id.linearLayout13)
+//        tablet.setOnClickListener {
+//            val tablet = Intent(activity, DataObatTabletActivity::class.java)
+//            startActivity(tablet)
+//        }
+//
 //    }
+
 
 
 

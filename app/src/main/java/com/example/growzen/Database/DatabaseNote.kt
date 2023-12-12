@@ -2,13 +2,14 @@ package com.example.growzen.Database
 
 import android.content.Context
 import androidx.room.Database
+
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.example.growzen.Entity.DataObat
 import com.example.growzen.Entity.WaktuObat
 
 
-@Database(entities = [DataObat::class,WaktuObat::class], version = 2)
+@Database(entities = [DataObat::class,WaktuObat::class], version = 1, exportSchema = false)
 abstract class DatabaseNote : RoomDatabase() {
     abstract fun dao(): Dao
 
@@ -28,8 +29,8 @@ abstract class DatabaseNote : RoomDatabase() {
             context.applicationContext,
             DatabaseNote::class.java,
             DB_NAME
-        )
-            .fallbackToDestructiveMigration()
-            .build()
+        ).build()
+//            .fallbackToDestructiveMigration()
+
     }
 }

@@ -16,4 +16,10 @@ Sayangnya, banyak masyarakat Indonesia yang masih awam dalam menyikapi TBC. Kesu
         <item>Deskripsi Artikel 2</item>
         <item>Deskripsi Artikel 2</item>
     </string-array>
+
+    <string-array name="jenis_obat_array">
+        <item>Tablet</item>
+        <item>Pil</item>
+        <item>Syrup</item>
+    </string-array>
 </resources>

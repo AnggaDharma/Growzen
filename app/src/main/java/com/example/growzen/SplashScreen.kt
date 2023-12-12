@@ -19,7 +19,6 @@ class SplashScreen : AppCompatActivity() {
     }
 
     private fun setFullscreen(){
-        //Menyembunyikan action bar
         supportActionBar?.hide()
         //Mengatur layout menjadi Full Screen
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {

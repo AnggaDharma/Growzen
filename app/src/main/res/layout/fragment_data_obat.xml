@@ -40,17 +40,18 @@
             android:textSize="16sp"
             android:textStyle="bold" />
 
-        <EditText
+        <Spinner
             android:id="@+id/ED_JenisObat"
             android:layout_width="match_parent"
             android:layout_height="54dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="20dp"
+            android:entries="@array/jenis_obat_array"
             android:background="@drawable/bg_textview"
             android:hint="Tablet , Pil , Sirup"
-            android:inputType="text"
             android:paddingLeft="15dp" />
+
 
         <TextView
             android:id="@+id/textView3"
@@ -95,7 +96,7 @@
             android:layout_marginEnd="20dp"
             android:background="@drawable/bg_textview"
             android:hint="30"
-            android:inputType="text"
+            android:inputType="number"
             android:paddingLeft="15dp" />
 
         <TextView
