@@ -3,17 +3,14 @@ package com.example.growzen
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.ImageView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import android.app.AlarmManager
-import android.app.AlarmManager.INTERVAL_DAY
-import android.app.AlarmManager.RTC_WAKEUP
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.app.PendingIntent
 import android.os.Build
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import com.example.growzen.databinding.ActivityTambahObat2Binding
 import com.google.android.material.timepicker.MaterialTimePicker
 import com.google.android.material.timepicker.TimeFormat
@@ -28,13 +25,15 @@ class TambahObat2Activity : AppCompatActivity() {
     private lateinit var calendar : Calendar
     private lateinit var alarmManager: AlarmManager
     private lateinit var pendingIntent: PendingIntent
+
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_tambah_obat2)
-
         binding = ActivityTambahObat2Binding.inflate(layoutInflater)
-
         setContentView(binding.root)
+
 
         createNotificationChannel()
 
@@ -50,16 +49,10 @@ class TambahObat2Activity : AppCompatActivity() {
             cancelAlarm()
         }
 
-        //fungsi klik untuk bottom navigation
 
-
-//        val alarm = findViewById<Button>(R.id.btn_simpan)
-//        alarm.setOnClickListener {
-//            val intent = Intent(this@TambahObat2Activity, MainActivity::class.java)
-//            startActivity(intent)
-//        }
 
     }
+
 
     private fun cancelAlarm() {
         alarmManager = getSystemService(ALARM_SERVICE) as AlarmManager

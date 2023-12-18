@@ -1,5 +1,6 @@
 package com.example.growzen
 
+import android.annotation.SuppressLint
 import android.app.PendingIntent
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -7,6 +8,7 @@ import android.content.Intent
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 class AlarmReceiver : BroadcastReceiver() {
+    @SuppressLint("MissingPermission", "UnspecifiedImmutableFlag")
     override fun onReceive(context: Context?, intent: Intent?) {
         val i = Intent(context, ResultActivity::class.java)
         intent!!.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
