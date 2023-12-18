@@ -22,6 +22,9 @@
             android:name=".DataObatTabletActivity"
             android:exported="false" />
         <activity
+            android:name=".Sharing2Activity"
+            android:exported="false" />
+        <activity
             android:name=".NotifikasiActivity"
             android:exported="false" />
         <activity
