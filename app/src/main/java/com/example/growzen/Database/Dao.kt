@@ -32,4 +32,5 @@ interface Dao {
     @Delete
     suspend fun deleteObat(obat: DataObat)
 
+
 }
