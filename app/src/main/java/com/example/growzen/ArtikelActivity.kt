@@ -34,10 +34,10 @@ class ArtikelActivity : AppCompatActivity() {
     private fun generateDummyData(size: Int): List<ModelsArtikel> {
         val dummyList = mutableListOf<ModelsArtikel>()
         val images = intArrayOf(
-            R.drawable.content1,
-            R.drawable.content2,
-            R.drawable.content3,
-            R.drawable.content4
+            R.drawable.artikel1,
+            R.drawable.artikel2,
+            R.drawable.artikel3,
+            R.drawable.artikel4
         )
 
         for (i in 0 until size) {
