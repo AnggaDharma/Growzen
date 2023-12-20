@@ -6,21 +6,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/biru"
-    tools:context=".ResultActivity">
+    tools:context=".DataObatSyrupActivity">
 
 
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="match_parent"
         android:layout_height="151dp"
-        android:src="@drawable/gbr_tb_obat"
-        app:layout_constraintBottom_toTopOf="@+id/lnup"
+        android:src="@drawable/sirupppp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:id="@+id/lnup"
         android:layout_width="match_parent"
         android:layout_height="619dp"
         android:background="@drawable/rectangle_white"
@@ -38,7 +36,6 @@
             android:layout_marginEnd="30dp"
             android:backgroundTint="@color/biru2"
             android:gravity="center"
-            android:paddingTop="15dp"
             android:text="Rifampicin"
             android:textColor="@color/white"
             android:textSize="20sp"
@@ -46,14 +43,15 @@
 
         <Button
             android:id="@+id/btn_tablet_2"
-            android:layout_width="match_parent"
+
             android:layout_height="80dp"
+            android:layout_width="match_parent"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="30dp"
             android:layout_marginEnd="30dp"
+            android:layout_marginTop="30dp"
             android:backgroundTint="@color/biru_langit"
             android:gravity="center"
-            android:text="Omeprazol"
+            android:text="Pyrazinamide"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -67,7 +65,7 @@
             android:layout_marginEnd="30dp"
             android:backgroundTint="@color/biru2"
             android:gravity="center"
-            android:text="Asamfolat"
+            android:text="Isoniasid"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -81,7 +79,7 @@
             android:layout_marginEnd="30dp"
             android:backgroundTint="@color/biru_langit"
             android:gravity="center"
-            android:text="Paracitamol"
+            android:text="Ethambutol"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />

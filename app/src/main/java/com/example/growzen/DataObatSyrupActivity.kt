@@ -5,10 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class ResultActivity : AppCompatActivity() {
+class DataObatSyrupActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_result)
+        setContentView(R.layout.activity_data_obat_syrup)
 
         val rifampicin = findViewById<Button>(R.id.btn_tablet_1)
         rifampicin.setOnClickListener {

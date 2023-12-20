@@ -11,18 +11,16 @@
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="416dp"
+        android:layout_width="match_parent"
         android:layout_height="151dp"
         android:src="@drawable/tablets"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:layout_width="416dp"
+        android:layout_width="match_parent"
         android:layout_height="619dp"
         android:background="@drawable/rectangle_white"
         android:orientation="vertical"
@@ -32,7 +30,7 @@
 
         <Button
             android:id="@+id/btn_tablet_1"
-            android:layout_width="360dp"
+            android:layout_width="match_parent"
             android:layout_height="80dp"
             android:layout_marginStart="30dp"
             android:layout_marginTop="50dp"
@@ -47,45 +45,43 @@
 
         <Button
             android:id="@+id/btn_tablet_2"
-            android:layout_width="360dp"
+
             android:layout_height="80dp"
+            android:layout_width="match_parent"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="30dp"
             android:layout_marginEnd="30dp"
+            android:layout_marginTop="30dp"
             android:backgroundTint="@color/biru_langit"
             android:gravity="center"
-            android:paddingTop="15dp"
-            android:text="Omeprazol"
+            android:text="Pyrazinamide"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_tablet_3"
-            android:layout_width="360dp"
+            android:layout_width="match_parent"
             android:layout_height="80dp"
             android:layout_marginStart="30dp"
             android:layout_marginTop="30dp"
             android:layout_marginEnd="30dp"
             android:backgroundTint="@color/biru2"
-            android:gravity="center_horizontal"
-            android:paddingTop="15dp"
-            android:text="Asamfolat"
+            android:gravity="center"
+            android:text="Isoniasid"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_tablet_4"
-            android:layout_width="360dp"
+            android:layout_width="match_parent"
             android:layout_height="80dp"
             android:layout_marginStart="30dp"
             android:layout_marginTop="30dp"
             android:layout_marginEnd="30dp"
             android:backgroundTint="@color/biru_langit"
-            android:gravity="center_horizontal"
-            android:paddingTop="15dp"
-            android:text="Paracitamol"
+            android:gravity="center"
+            android:text="Ethambutol"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />

@@ -62,11 +62,11 @@ class HomeFragment : Fragment() {
         }
 
         buttonPil.setOnClickListener {
-            navigateToDetailActivity("Pil")
+            navigateToPilActivity("Pil")
         }
 
         buttonSyrup.setOnClickListener {
-            navigateToDetailActivity("Syrup")
+            navigateToSyrupActivity("Syrup")
         }
 
         return view
@@ -74,6 +74,16 @@ class HomeFragment : Fragment() {
 
     private fun navigateToDetailActivity(jenis: String) {
         val intent = Intent(activity, DataObatTabletActivity::class.java)
+        intent.putExtra("JENIS", jenis)
+        startActivity(intent)
+    }
+    private fun navigateToPilActivity(jenis: String) {
+        val intent = Intent(activity, DataObatPilActivity::class.java)
+        intent.putExtra("JENIS", jenis)
+        startActivity(intent)
+    }
+    private fun navigateToSyrupActivity(jenis: String) {
+        val intent = Intent(activity, DataObatSyrupActivity::class.java)
         intent.putExtra("JENIS", jenis)
         startActivity(intent)
     }
